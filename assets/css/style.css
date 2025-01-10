@@ -1,0 +1,17 @@
+.background-profile{
+    background-color: #dbf2fe;
+}
+
+.border-round{
+    height: 100px;
+    width: 100px;
+}
+
+h1, h2, h3, h4, h5, h6, .f-color {
+    color: #49bfff;
+}
+
+.logo-size{
+    height: 200px;
+    width: 200px;
+}
