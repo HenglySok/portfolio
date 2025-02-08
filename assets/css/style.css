@@ -62,7 +62,7 @@
   }
 
   .w-card{
-    width: 45%;
+    width: 50%;
   }
 
   @media (max-width: 576px) { /* Large screens and up */
