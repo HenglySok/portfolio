@@ -1,0 +1,62 @@
+.navbar {
+    position: static; /* Default: not fixed */
+  }
+  
+  @media (min-width: 992px) { /* Large screens and up */
+    .navbar {
+      position: fixed; /* Fixed position on large screens */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10; /* Ensure it stays on top */
+    }
+  }
+
+.nav-link:hover, .nav-link:focus {
+    color: #000;
+    text-decoration: underline;
+}
+
+.responsive-rounded {
+    border-radius: 0; /* Default (No rounded corners) */
+    height: 100%;
+}
+
+@media (min-width: 768px) {  /* Medium screens (md) */
+    .responsive-rounded {
+        border-radius: 10px; /* Slightly rounded */
+    }
+}
+
+@media (min-width: 992px) { /* Large screens (lg) */
+    .responsive-rounded {
+        border-radius: 50%; /* Fully rounded (circle) */
+    }
+}
+
+.skill-card {
+    opacity: 0;
+    transform: translateY(50px); /* Initial position below */
+    transition: all 0.5s ease-out;
+  }
+  
+  .skill-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skill-card-1 {
+    transition-delay: 0.1s;
+  }
+  
+  .skill-card-2 {
+    transition-delay: 0.2s;
+  }
+  
+  .skill-card-3 {
+    transition-delay: 0.3s;
+  }
+  
+  .skill-card-4 {
+    transition-delay: 0.4s;
+  }
