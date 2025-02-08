@@ -60,3 +60,13 @@
   .skill-card-4 {
     transition-delay: 0.4s;
   }
+
+  .w-card{
+    width: 45%;
+  }
+
+  @media (max-width: 576px) { /* Large screens and up */
+    .w-card {
+      width: 100%;
+    }
+  }
