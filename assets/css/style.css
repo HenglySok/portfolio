@@ -1,74 +1,116 @@
 .navbar {
-    position: static; /* Default: not fixed */
-  }
-  
-  @media (min-width: 992px) { /* Large screens and up */
-    .navbar {
-      position: fixed; /* Fixed position on large screens */
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10; /* Ensure it stays on top */
-    }
-  }
+  position: static;
+  /* Default: not fixed */
+}
 
-.nav-link:hover, .nav-link:focus {
-    color: #000;
-    text-decoration: underline;
+@media (min-width: 992px) {
+
+  /* Large screens and up */
+  .navbar {
+    position: fixed;
+    /* Fixed position on large screens */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /* Ensure it stays on top */
+  }
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #000;
+  text-decoration: underline;
 }
 
 .responsive-rounded {
-    border-radius: 0; /* Default (No rounded corners) */
-    height: 100%;
+  border-radius: 0;
+  /* Default (No rounded corners) */
+  height: 100%;
 }
 
-@media (min-width: 768px) {  /* Medium screens (md) */
-    .responsive-rounded {
-        border-radius: 10px; /* Slightly rounded */
-    }
+@media (min-width: 768px) {
+
+  /* Medium screens (md) */
+  .responsive-rounded {
+    border-radius: 10px;
+    /* Slightly rounded */
+  }
 }
 
-@media (min-width: 992px) { /* Large screens (lg) */
-    .responsive-rounded {
-        border-radius: 50%; /* Fully rounded (circle) */
-    }
+@media (min-width: 992px) {
+
+  /* Large screens (lg) */
+  .responsive-rounded {
+    border-radius: 50%;
+    /* Fully rounded (circle) */
+  }
 }
 
 .skill-card {
-    opacity: 0;
-    transform: translateY(50px); /* Initial position below */
-    transition: all 0.5s ease-out;
-  }
-  
-  .skill-card.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .skill-card-1 {
-    transition-delay: 0.1s;
-  }
-  
-  .skill-card-2 {
-    transition-delay: 0.2s;
-  }
-  
-  .skill-card-3 {
-    transition-delay: 0.3s;
-  }
-  
-  .skill-card-4 {
-    transition-delay: 0.4s;
-  }
+  opacity: 0;
+  transform: translateY(50px);
+  /* Initial position below */
+  transition: all 0.5s ease-out;
+}
 
-  .w-card{
-    width: 50%;
-  }
+.skill-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  @media (max-width: 576px) { /* Large screens and up */
-    .w-card {
-      width: 100%;
-    }
-  }
+.skill-card-1 {
+  transition-delay: 0.1s;
+}
 
-  //test
+.skill-card-2 {
+  transition-delay: 0.2s;
+}
+
+.skill-card-3 {
+  transition-delay: 0.3s;
+}
+
+.skill-card-4 {
+  transition-delay: 0.4s;
+}
+
+.w-card {
+  width: 50%;
+}
+
+@media (max-width: 576px) {
+
+  /* Large screens and up */
+  .w-card {
+    width: 100%;
+  }
+}
+
+.fs-responsive {
+  font-size: 32px;
+}
+
+@media(max-width: 768px) {
+  .fs-responsive {
+    font-size: 24px;
+  }
+}
+
+.min-w {
+  min-width: 375px;
+}
+
+.card:hover {
+  background-color: pink;
+  color: blue;
+  opacity: 50%;
+}
+
+.card:hover {
+  transform: translate(-10px, -20px);
+}
+
+.btn:hover {
+  transform: rotate(5deg);
+}
