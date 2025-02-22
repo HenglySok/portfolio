@@ -101,13 +101,13 @@
   min-width: 375px;
 }
 
-.card:hover {
+.card-transition:hover {
   background-color: pink;
   color: blue;
   opacity: 50%;
 }
 
-.card:hover {
+.card-transition:hover {
   transform: translate(-10px, -20px);
 }
 
