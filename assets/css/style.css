@@ -101,10 +101,11 @@
   min-width: 375px;
 }
 
-.card-transition:hover {
-  background-color: pink;
-  color: blue;
-  opacity: 50%;
+.card-transition:hover,
+{
+background-color: pink;
+color: blue;
+opacity: 50%;
 }
 
 .card-transition:hover {
@@ -113,4 +114,8 @@
 
 .btn:hover {
   transform: rotate(5deg);
+}
+
+.bg-hover:hover {
+  transform: rotate(30deg);
 }
